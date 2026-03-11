@@ -1,15 +1,68 @@
 #Saldo e deposito
 saldo = float(input('Informe o saldo da conta: '))
 deposito = float(input('Informe o valor do deposito: '))
-
 saldo += deposito
-
 print(f'Novo saldo: {saldo}')
 
 #Orçamento e Gasto
 orcamento = float(input('\nInforme o orçamento: '))
 gasto = float(input('Informe o valor gasto: '))
-
 orcamento -= gasto
-
 print(f'Orçamento Restante: {orcamento}')
+
+#Estoque do dia
+estoque = int(input('\nEstoque no início do dia: '))
+vendido = int(input('Quantidade vendida: '))
+estoque -= vendido
+print(f'Estoque Final:{estoque}')
+
+#Multiplicar número por 3
+numero = int(input('\nInforme um número: '))
+numero *= 3
+print(f'Resultado: {numero}')
+
+#Converter horas para dias
+minutos = int(input('\nInforme minutos: '))
+minutos //= 60
+print(f'Horas inteiras: {minutos}')
+
+#Segundos para minutos inteiros
+segundos = int(input('\nInforme segundos: '))
+segundos = //=60
+print(f'Minutos Inteiros: {segundos}')
+
+#Par ou Ímpar
+n = int(input('\nInforme um número: '))
+n %= 2
+print(f'Resultado: {n}')
+if n == 0:
+    print('O número é par')
+else:
+    print('O número é ímpar')
+
+#Controle de Estoque
+estoque = int(input('\nInforme o estoque inicial: '))
+vendas = int(input('Informe a quantidade de vendas: '))
+reposicao = int(input('Informe a quantidade de reposição: '))
+estoque -= vendas
+estoque =+ reposicao
+estoque %= 6
+print(f'Estoque Final: {Estoque}')
+
+#Converter segundos em minutos e segundos
+tempo = int(input('\nInforme o tempo em segundos: '))
+minutos = tempo
+minutos //= 60
+segundosrestantes = tempo
+segundosrestantes %= 60
+print(f'Minutos: {minutos}')
+print(f'Segundos restantes: {segundosrestantes}')
+
+#Converter metros para km e metros restantes
+metros = int(input('\nInforme a distância em metros: '))
+km = metros
+km //= 1000
+metrosrestantes = metros
+metrosrestantes = %= 1000
+print(f'Km: {km}')
+print(f'Metros restantes: {metrosrestantes}')
