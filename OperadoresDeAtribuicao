@@ -1,2 +1,1 @@
-aluna = input('Qual é o seu nome? ')
-print(f'Olá, {aluna}!')
+saldo = float(input('Digite o seu saldo: '))
