@@ -1,2 +1,15 @@
-saldo = float(input('Digite o seu saldo: '))
-deposito = float(input('Digite o valor do deposito: '))
+#Saldo e deposito
+saldo = float(input('Informe o saldo da conta: '))
+deposito = float(input('Informe o valor do deposito: '))
+
+saldo += deposito
+
+print(f'Novo saldo: {saldo}')
+
+#Orçamento e Gasto
+orcamento = float(input('\nInforme o orçamento: '))
+gasto = float(input('Informe o valor gasto: '))
+
+orcamento -= gasto
+
+print(f'Orçamento Restante: {orcamento}')
