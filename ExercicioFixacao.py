@@ -26,7 +26,7 @@ altura = float(input("\nInforme a sua altura (Ex: 1.74): "))
 print(f'Sua altura é {altura}m.')
 
 #Leia dois números decimais (float) e imprima a média
-n3 = float(input("\ninforme um número decimal (Ex: X.X): "))
+n3 = float(input("\nInforme um número decimal (Ex: X.X): "))
 n4 = float(input("Informe outro número decimal (Ex: X.X): "))
 media = (n3 + n4)/2
 print(f'A média aritmética é: {media}')
@@ -36,3 +36,62 @@ numero_string = (input("\nInforme um número: "))
 print(f'Antes da conversão: {type (numero_string)}.')
 numero_int = int(numero_string)
 print(f'Depois da conversão: {type (numero_int)}.')
+
+#Leia o preço de um produto e imprima o preço com 10% de desconto
+preco = float(input("\nInforme o preço do produto R$ XX.XX: "))
+desconto = preco * 0.10
+preco_final = preco - desconto
+print(f'Preço com 10% de desconto: {preco_final}')
+
+#Leia o raio de um círculo (float) e calcule a área, utilize π = 3.14.
+raio = float(input("\nInforme o raio do círculo: "))
+area = 3.14 * (raio ** 2)
+print(f'A área do círculo é: {area:.2f}')
+
+#Leia a distância (km) e o tempo (h), calcule a velocidade média
+distancia = float(input("\nInforme a distância percorrida em km: "))
+tempo = float(input("Informe o tempo demorado em horas: "))
+velocidade = distancia // tempo
+print(f'A velocidade média é: {velocidade}km por hora.')
+
+#Leia 3 notas (float) e imprima a média com duas casas decimais.
+nota1 = float(input("\nInforme a primeira nota: "))
+nota2 = float(input("Informe a segunda nota: "))
+nota3 = float(input("Infrome a terceira nota: "))
+media = (nota1 + nota2 + nota3)/3
+print(f'A média aritmética é: {media: .2f}')
+
+#Leia o salário (float) e um percentual de aumento (float) e calcule o novo salário.
+salario = float(input("\nInforme o seu salário (sem ponto ou vírgula) R$: "))
+aumento = salario * 0.10
+novo_salario = salario + aumento
+print(f'O novo salário com aumento de 10% é: {novo_salario}')
+
+#Leia uma quantidade de minutos (int) e converta para horas e minutos
+minutos = int(input("\nInforme o tempo em minutos: "))
+horas = minutos // 60
+resto = minutos % 60
+print(f'{horas}h{resto}')
+
+#Leia o nome e a idade e imprima exatamente neste formato
+print(f'\nNome: {nome} | Idade: {idade} anos')
+
+#Leia dois int (a e b) e imprima:
+a = int(input("\nInforme um número inteiro: "))
+b = int(input("Informe outro número inteiro: "))
+print(f'{a} + {b} = X | {a} - {b} = Y | {a} * {b} = Z')
+
+#Leia um float e imprima com 2 casas decimais
+f_num = float(input("\nInforme um número qualquer: "))
+print(f'{f_num: .2f}')
+
+#Leia um nome e uma nota (float), com uma casa decimal, e imprima:
+aluno = nome
+a_nota = float(input("\nInforme a sua nota: "))
+print(f'{aluno} ficou com nota {a_nota}')
+
+#Leia o ano de nascimento (int) e imprima a idade estimada. (considere ano atual = 2026).
+ano_nasc = int(input("\nInforme o ano do seu nascimento: "))
+ano_atual = 2026
+est_idade = ano_nasc - ano_atual
+print(f'Você tem {est_idade} anos.')
