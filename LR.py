@@ -10,11 +10,11 @@ while valor != 0:
     valor = float(input("Digite o valor da compra (0 para encerrar): "))
 
 if quantidade > 0:
-    media = total_compras / quantidade
+    media_compras = total_compras / quantidade
 else:
     media = 0
 
 print(f"Total das compras: R$ {total_compras:.2f}")
 print(f"Quantidade de compras: {quantidade}")
-print(f"Valor médio das compras: R$ {media:.2f}")
+print(f"Valor médio das compras: R$ {media_compras:.2f}")
 
