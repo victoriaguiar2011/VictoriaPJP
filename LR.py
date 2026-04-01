@@ -11,8 +11,6 @@ while valor != 0:
 
 if quantidade > 0:
     media_compras = total_compras / quantidade
-else:
-    media_compras = 0
 
 print(f"Total das compras: R$ {total_compras:.2f}")
 print(f"Quantidade de compras: {quantidade}")
